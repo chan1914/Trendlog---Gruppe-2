@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\index.cshtml" />
+    <Content Include="Views\Home\main.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +16,6 @@
     <None Include="wwwroot\assets\fonts\fa-solid-900.woff2" />
     <None Include="wwwroot\assets\fonts\Pe-icon-7-stroke.svg" />
     <None Include="wwwroot\assets\scripts\main.js" />
-    <None Include="wwwroot\css\main.css" />
   </ItemGroup>
 
 
