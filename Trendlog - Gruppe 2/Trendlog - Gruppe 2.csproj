@@ -7,11 +7,61 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\charts-chartjs.cshtml" />
+    <Content Remove="Views\Home\components-accordions.cshtml" />
+    <Content Remove="Views\Home\components-calendar.cshtml" />
+    <Content Remove="Views\Home\components-carousel.cshtml" />
+    <Content Remove="Views\Home\components-maps.cshtml" />
+    <Content Remove="Views\Home\components-modals.cshtml" />
+    <Content Remove="Views\Home\components-notifications.cshtml" />
+    <Content Remove="Views\Home\components-pagination.cshtml" />
+    <Content Remove="Views\Home\components-progress-bar.cshtml" />
+    <Content Remove="Views\Home\components-scrollable-elements.cshtml" />
+    <Content Remove="Views\Home\components-tabs.cshtml" />
+    <Content Remove="Views\Home\components-tooltips-popovers.cshtml" />
+    <Content Remove="Views\Home\dashboard-boxes.cshtml" />
+    <Content Remove="Views\Home\elements-badges-labels.cshtml" />
+    <Content Remove="Views\Home\elements-buttons-standard.cshtml" />
+    <Content Remove="Views\Home\elements-cards.cshtml" />
+    <Content Remove="Views\Home\elements-dropdowns.cshtml" />
+    <Content Remove="Views\Home\elements-icons.cshtml" />
+    <Content Remove="Views\Home\elements-list-group.cshtml" />
+    <Content Remove="Views\Home\elements-navigation.cshtml" />
+    <Content Remove="Views\Home\elements-utilities.cshtml" />
+    <Content Remove="Views\Home\forms-controls.cshtml" />
+    <Content Remove="Views\Home\forms-layouts.cshtml" />
+    <Content Remove="Views\Home\forms-validation.cshtml" />
     <Content Remove="Views\Home\index.cshtml" />
+    <Content Remove="Views\Home\tables-regular.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Home\charts-chartjs.cshtml" />
+    <None Include="Views\Home\components-accordions.cshtml" />
+    <None Include="Views\Home\components-calendar.cshtml" />
+    <None Include="Views\Home\components-carousel.cshtml" />
+    <None Include="Views\Home\components-maps.cshtml" />
+    <None Include="Views\Home\components-modals.cshtml" />
+    <None Include="Views\Home\components-notifications.cshtml" />
+    <None Include="Views\Home\components-pagination.cshtml" />
+    <None Include="Views\Home\components-progress-bar.cshtml" />
+    <None Include="Views\Home\components-scrollable-elements.cshtml" />
+    <None Include="Views\Home\components-tabs.cshtml" />
+    <None Include="Views\Home\components-tooltips-popovers.cshtml" />
+    <None Include="Views\Home\dashboard-boxes.cshtml" />
+    <None Include="Views\Home\elements-badges-labels.cshtml" />
+    <None Include="Views\Home\elements-buttons-standard.cshtml" />
+    <None Include="Views\Home\elements-cards.cshtml" />
+    <None Include="Views\Home\elements-dropdowns.cshtml" />
+    <None Include="Views\Home\elements-icons.cshtml" />
+    <None Include="Views\Home\elements-list-group.cshtml" />
+    <None Include="Views\Home\elements-navigation.cshtml" />
+    <None Include="Views\Home\elements-utilities.cshtml" />
+    <None Include="Views\Home\forms-controls.cshtml" />
+    <None Include="Views\Home\forms-layouts.cshtml" />
+    <None Include="Views\Home\forms-validation.cshtml" />
     <None Include="Views\Home\index.cshtml" />
+    <None Include="Views\Home\tables-regular.cshtml" />
     <None Include="wwwroot\css\main.css" />
   </ItemGroup>
 
