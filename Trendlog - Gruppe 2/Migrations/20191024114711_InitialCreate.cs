@@ -4,22 +4,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Trendlog___Gruppe_2.Migrations
 {
-    public partial class Virkforhelvede : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "AlarmSettings",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AlarmSettings", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Channels",
                 columns: table => new
@@ -32,7 +20,7 @@ namespace Trendlog___Gruppe_2.Migrations
                     Lifetime = table.Column<int>(nullable: false),
                     Longitume = table.Column<int>(nullable: false),
                     Elevation = table.Column<int>(nullable: false),
-                    EmailId = table.Column<int>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
                     Created = table.Column<DateTime>(nullable: false),
                     Updated = table.Column<DateTime>(nullable: false),
                     MaxSize = table.Column<int>(nullable: false),
@@ -41,12 +29,6 @@ namespace Trendlog___Gruppe_2.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Channels", x => x.ChannelId);
-                    table.ForeignKey(
-                        name: "FK_Channels_AlarmSettings_EmailId",
-                        column: x => x.EmailId,
-                        principalTable: "AlarmSettings",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -96,11 +78,6 @@ namespace Trendlog___Gruppe_2.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Channels_EmailId",
-                table: "Channels",
-                column: "EmailId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Feeds_ChannelId",
                 table: "Feeds",
                 column: "ChannelId");
@@ -121,9 +98,6 @@ namespace Trendlog___Gruppe_2.Migrations
 
             migrationBuilder.DropTable(
                 name: "Channels");
-
-            migrationBuilder.DropTable(
-                name: "AlarmSettings");
         }
     }
 }

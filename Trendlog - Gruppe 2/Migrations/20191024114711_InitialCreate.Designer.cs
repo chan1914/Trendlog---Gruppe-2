@@ -10,8 +10,8 @@ using Trendlog___Gruppe_2.Data;
 namespace Trendlog___Gruppe_2.Migrations
 {
     [DbContext(typeof(TrendlogContext))]
-    [Migration("20191024083645_TryAgain")]
-    partial class TryAgain
+    [Migration("20191024114711_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
