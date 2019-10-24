@@ -15,6 +15,16 @@ namespace Trendlog___Gruppe_2.Controllers
 			return View();
 		}
 
+		public IActionResult charts_chartjs()
+		{
+			return View();
+		}
+
+		public IActionResult components_accordions()
+		{
+			return View();
+		}
+
 		public IActionResult Privacy()
 		{
 			return View();

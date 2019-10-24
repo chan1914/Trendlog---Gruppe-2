@@ -10176,7 +10176,7 @@ a, button, .btn {
 }
 
 .app-header.header-text-dark .app-header__logo .logo-src {
-    background: url(.../assets////images/logo-inverse.png)
+    background: url(../assets/images/logo-inverse.png)
 }
 
 .app-sidebar {
@@ -10454,7 +10454,7 @@ a, button, .btn {
     }
 
     .app-sidebar.sidebar-text-light .app-header__logo .logo-src {
-        background: url(../assets////images/logo.png)
+        background: url(../assets/images/logo.png)
     }
 
     .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner, .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner::before, .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner::after {
@@ -15617,7 +15617,7 @@ legend {
     font-weight: 900;
     font-display: auto;
     src: url(../assets/fonts/fa-solid-900.eot);
-    src: url(../assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(.../assets/////fonts/fa-solid-900.woff2) format("woff2"),url(../assets/fonts/fa-solid-900.woff) format("woff"),url(../assets/fonts/fa-solid-900.ttf) format("truetype"),url(../assets/fonts/fa-solid-900.svg#fontawesome) format("svg")
+    src: url(../assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../assets/fonts/fa-solid-900.woff2) format("woff2"),url(../assets/fonts/fa-solid-900.woff) format("woff"),url(../assets/fonts/fa-solid-900.ttf) format("truetype"),url(../assets/fonts/fa-solid-900.svg#fontawesome) format("svg")
 }
 
 .fa, .fas {

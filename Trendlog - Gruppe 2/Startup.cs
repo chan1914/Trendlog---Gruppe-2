@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Trendlog___Gruppe_2.Models;
 
 namespace Trendlog___Gruppe_2
 {
@@ -33,6 +35,9 @@ namespace Trendlog___Gruppe_2
 
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+		    services.AddDbContext<UserContext>(options =>
+		            options.UseSqlServer(Configuration.GetConnectionString("UserContext")));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

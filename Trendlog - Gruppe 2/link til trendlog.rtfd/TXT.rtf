@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red11\green76\blue180;\red251\green0\blue7;\red35\green255\blue6;
+}
+{\*\expandedcolortbl;;\cssrgb\c1961\c38824\c75686;\cssrgb\c100000\c0\c0;\cssrgb\c0\c100000\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 \expnd0\expndtw0\kerning0
+Hermed et screendump af hvordan det ser ud n\'e5r det foresp\'f8rges p\'e5 trendlog.io data via REST api\'92en
+\fs24 \
+
+\fs22 Programmet jeg bruger er Advanced REST client, men der findes andre programmer der kan det samme.
+\fs24 \
+
+\fs22 Syntaksen for at hente (GET) data er urlkoden:
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://api.trendlog.io/V1/channels/20/feeds/p1_cnt?apikey=GUZ5VO4I39GM"}}{\fldrslt 
+\fs22 \cf2 \ul \ulc2 https://api.trendlog.io/V1/channels/\cb3 20\cb1 /feeds/\cb3 p1_cnt\cb1 ?apikey=\cb4 GUZ5VO4I39GM}}\
+\pard\pardeftab720\partightenfactor0
+
+\fs22 \cf0 Den f\'f8rste variable er kanalnummeret: 20 (Plug&Log demo kanalen)
+\fs24 \
+
+\fs22 N\'e6ste variable er feed navnet. Feed navne findes i en feed oversigt p\'e5 trendlog.io
+\fs24 \
+
+\fs22 API n\'f8glen skal altid angives den er unik for hver bruger og kan findes under \'94My profile\'94 n\'e5r man er logget ind p\'e5 trendl\'e6og.io (den viste er din n\'f8gle).
+\fs24 \
+
+\fs22 De efterf\'f8lgende variable er:
+\fs24 \
+
+\fs22 start=09-10-2019 00:00:01&end=08-10-2019 00:00:00
+\fs24 \
+
+\fs22 Giver lidt sig selv, dato omr\'e5det man \'f8nsker data fra.
+\fs24 \
+
+\fs22 \'a0
+\fs24 \
+
+\fs22 Resultatet
+\fs24 \
+
+\fs22 Ved succes returneres 200 OK , og resultatet i JSON format.
+\fs24 \
+
+\fs22 JSON resultatet best\'e5r f\'f8rst af nogle kanal informationer.
+\fs24 \
+
+\fs22 Dataene findes i feltet \'94feeds\'94 som er et array af points.
+\fs24 \
+
+\fs22 \'a0
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 {{\NeXTGraphic unknown.jpg \width19875 \height10770 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs22 \cf0 \'a0
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs22 \cf0 Fra:
+\f0\b0  Simon Stochholm <{\field{\*\fldinst{HYPERLINK "mailto:sist@ucl.dk"}}{\fldrslt \cf2 \ul \ulc2 sist@ucl.dk}}> }

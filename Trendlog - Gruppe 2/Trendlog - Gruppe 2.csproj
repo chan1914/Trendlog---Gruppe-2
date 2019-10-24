@@ -7,10 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\charts-chartjs.cshtml" />
-    <Content Remove="Views\Home\components-accordions.cshtml" />
-    <Content Remove="Views\Home\components-calendar.cshtml" />
-    <Content Remove="Views\Home\components-carousel.cshtml" />
+    <Content Remove="Views\Home\charts_chartjs.cshtml" />
     <Content Remove="Views\Home\components-maps.cshtml" />
     <Content Remove="Views\Home\components-modals.cshtml" />
     <Content Remove="Views\Home\components-notifications.cshtml" />
@@ -19,6 +16,9 @@
     <Content Remove="Views\Home\components-scrollable-elements.cshtml" />
     <Content Remove="Views\Home\components-tabs.cshtml" />
     <Content Remove="Views\Home\components-tooltips-popovers.cshtml" />
+    <Content Remove="Views\Home\components_accordions.cshtml" />
+    <Content Remove="Views\Home\components_calendar.cshtml" />
+    <Content Remove="Views\Home\components_carousel.cshtml" />
     <Content Remove="Views\Home\dashboard-boxes.cshtml" />
     <Content Remove="Views\Home\elements-badges-labels.cshtml" />
     <Content Remove="Views\Home\elements-buttons-standard.cshtml" />
@@ -36,10 +36,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\charts-chartjs.cshtml" />
-    <None Include="Views\Home\components-accordions.cshtml" />
-    <None Include="Views\Home\components-calendar.cshtml" />
-    <None Include="Views\Home\components-carousel.cshtml" />
+    <None Include="Views\Home\charts_chartjs.cshtml" />
+    <None Include="Views\Home\components_accordions.cshtml" />
+    <None Include="Views\Home\components_calendar.cshtml" />
+    <None Include="Views\Home\components_carousel.cshtml" />
     <None Include="Views\Home\components-maps.cshtml" />
     <None Include="Views\Home\components-modals.cshtml" />
     <None Include="Views\Home\components-notifications.cshtml" />
@@ -69,6 +69,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
 
 </Project>
