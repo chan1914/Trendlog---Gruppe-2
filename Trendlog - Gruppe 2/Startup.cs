@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using Trendlog___Gruppe_2.Models;
+using Trendlog___Gruppe_2.Data;
 
 namespace Trendlog___Gruppe_2
 {
@@ -33,11 +33,10 @@ namespace Trendlog___Gruppe_2
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
 
+            services.AddDbContext<TrendlogContext>(opt =>
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-		    services.AddDbContext<UserContext>(options =>
-		            options.UseSqlServer(Configuration.GetConnectionString("UserContext")));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

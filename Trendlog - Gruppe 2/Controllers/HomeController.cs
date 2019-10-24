@@ -12,18 +12,15 @@ namespace Trendlog___Gruppe_2.Controllers
 	{
 		public IActionResult Index()
 		{
-			return View();
+            BandwidthStats.GeneatedLeads = 10;
+            BandwidthStats.ServerAllocation = 30;
+            BandwidthStats.SubmittedTickers = 60;
+
+
+            return View();
 		}
 
-		public IActionResult charts_chartjs()
-		{
-			return View();
-		}
-
-		public IActionResult components_accordions()
-		{
-			return View();
-		}
+       
 
 		public IActionResult Privacy()
 		{
